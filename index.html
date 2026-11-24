@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>আমাদের সেন্টার | সেবা ও তথ্য</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">আমাদের সেন্টার</div>
+      <nav class="menu">
+        <a href="#services">সেবাসমূহ</a>
+        <a href="#about">পরিচিতি</a>
+        <a href="#contact" class="btn-small">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="badge">ডিজিটাল সেবা পোর্টাল</span>
+        <h1>সহজ, দ্রুত ও নির্ভরযোগ্য সেবা এক ঠিকানায়</h1>
+        <p>আমাদের সেন্টারের সব তথ্য, সেবা তালিকা এবং যোগাযোগের ঠিকানা এখন হাতের মুঠোয়। ফোন থেকে হোম স্ক্রিনে যুক্ত করে অ্যাপের মতো ব্যবহার করতে পারবেন।</p>
+        <div class="actions">
+          <a href="#services" class="btn-primary">সেবাগুলো দেখুন</a>
+          <a href="#contact" class="btn-secondary">অ্যাপয়েন্টমেন্ট / তথ্য</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>আমাদের সেবাসমূহ</h2>
+        <div class="grid" id="service-list"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>আমরা মানসম্মত ও সময়োপযোগী সেবা প্রদানে প্রতিশ্রুতিবদ্ধ। যেকোনো জিজ্ঞাসা বা সময়সূচি জানতে নিচের যোগাযোগ মাধ্যম ব্যবহার করুন।</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>যোগাযোগ করুন</h2>
+        <form id="inquiry-form" class="card form-box">
+          <label>
+            আপনার নাম
+            <input type="text" id="name" placeholder="নাম লিখুন" required />
+          </label>
+          <label>
+            ফোন নম্বর
+            <input type="tel" id="phone" placeholder="01XXXXXXXXX" required />
+          </label>
+          <label>
+            বার্তা বা প্রয়োজনীয় তথ্য
+            <textarea id="message" rows="4" placeholder="আপনার জিজ্ঞাসা লিখুন..." required></textarea>
+          </label>
+          <button type="submit" class="btn-primary">বার্তা পাঠান</button>
+          <p id="form-status" class="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> আমাদের সেন্টার। সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
